@@ -40,6 +40,7 @@ done
 info "Configuring default PHP options for Moodle"
 php_conf_set memory_limit "$PHP_DEFAULT_MEMORY_LIMIT"
 php_conf_set max_input_vars "$PHP_DEFAULT_MAX_INPUT_VARS"
+php_conf_set session.upload_progress.enabled "0"
 php_conf_set extension "pgsql"
 
 # Enable default web server configuration for Moodle
